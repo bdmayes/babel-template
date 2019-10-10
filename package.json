@@ -1,0 +1,35 @@
+{
+  "name": "babel-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel -d dist/ src",
+    "start": "nodemon --exec babel-node src/index.js --watch src --watch node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdmayes/babel-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdmayes/babel-template/issues"
+  },
+  "homepage": "https://github.com/bdmayes/babel-template#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.3"
+  },
+  "dependencies": {
+    "llog": "^0.2.0",
+    "pino": "^5.13.4"
+  }
+}
