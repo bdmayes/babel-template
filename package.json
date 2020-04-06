@@ -9,7 +9,7 @@
     "lint-fix": "eslint --fix src tests",
     "start": "nodemon --exec babel-node src/index.js --watch src --watch node_modules",
     "start-prod": "node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -23,24 +23,27 @@
   },
   "homepage": "https://github.com/bdmayes/babel-template#readme",
   "devDependencies": {
-    "@babel/cli": "^7.6.3",
-    "@babel/core": "^7.6.3",
-    "@babel/node": "^7.6.3",
-    "@babel/preset-env": "^7.6.3",
-    "babel-eslint": "^10.0.3",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^24.9.0",
     "babel-plugin-module-resolver": "^3.2.0",
-    "eslint": "^6.5.1",
-    "eslint-import-resolver-babel-module": "^5.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-import-resolver-babel-module": "^5.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^22.21.0",
     "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "jest": "^24.9.0",
-    "nodemon": "^1.19.3"
+    "nodemon": "^1.19.4",
+    "prettier": "^2.0.3"
   },
   "dependencies": {
     "llog": "^0.2.0",
-    "pino": "^5.13.4"
+    "pino": "^5.17.0"
   }
 }

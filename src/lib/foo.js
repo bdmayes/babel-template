@@ -1,6 +1,12 @@
-import log from 'llog';
+import log from "llog";
 
-export const someFunction = () => {
-  log.info('I do things');
-  return "the stuff";
+/**
+ * Concatenates x to "the stuff plus " and returns it.
+ *
+ * @param {number} x A number to concatenate.
+ * @returns {string} A string that says "the stuff plus " and x.
+ */
+export const someFunction = (x) => {
+  log.info("I do things");
+  return `the stuff plus ${x}`;
 };
